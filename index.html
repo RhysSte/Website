@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <audio controls preload="auto" class="audio" hidden autoplay>
@@ -19,6 +20,7 @@
                 <a href="#">PORTFOLIO</a>
             <div id="indicator"></div>
           </nav>
+
         <section class="wrapperSplit">
           <div class="split left">
             <div class="centered">
@@ -38,6 +40,23 @@
             <div class="aboutMyLife">
                 <h2 class="aboutmylifeheading">About my life</h2>  
                 <p>I am a 22 Year old Software Engineer who works on Front and Backend development.</p>
+            </div>
+        </section>
+        <section>
+            <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+            </div>
+            <div class="winning-message" id="winningMessage">
+                <div id="winningMessageText"></div>
+                <button id="restartButton">Restart</button>
             </div>
         </section>
         <section> 
@@ -61,4 +80,5 @@
             <p class="text-center">Copyright &copy; Rhys Stedman</p>
           </footer>
     </body>
+        <script src="javascript.js"></script>
 </html>
