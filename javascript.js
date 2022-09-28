@@ -22,6 +22,10 @@ startGame()
 
 restartButton.addEventListener('click', startGame)
 
+function buttonClicked() {
+    $("#hideDiv").show();
+}
+
 function startGame() {
 	isPlayer_O_Turn = false
 	cellElements.forEach(cell => {
@@ -50,9 +54,9 @@ function handleCellClick(e) {
 
 function endGame(draw){
     if(draw){
-        winningMessageElement.innerText = "It's a draw!"
+        winningMessageTextElement.innerText = "It's a draw!"
     }else{
-        winningMessageElement.innerText = `Player with ${isPlayer_O_Turn ? "O's" : "X's"} wins!` 
+        winningMessageTextElement.innerText = `Player with ${isPlayer_O_Turn ? "O's" : "X's"} wins!` 
     }
     winningMessageElement.classList.add('show')
 }
